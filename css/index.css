@@ -1,0 +1,95 @@
+body {
+  margin: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+header .logoOhmyfood img {
+  height: 44px;
+  width: 162px;
+}
+
+main .localisation {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EAEAEA;
+}
+main .localisation .iconeAdresse i {
+  height: 16px;
+  margin: 5px;
+}
+main .localisation .iconeAdresse input {
+  margin: 5px;
+  font-size: 16px;
+  border: 0px;
+  width: 120px;
+  background-color: #EAEAEA;
+}
+main .explorationMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #F6F6F6;
+}
+main .explorationMenu h2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px;
+  margin: 30px 30px 5px 30px;
+}
+main .explorationMenu p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  margin: 5px 30px 30px 30px;
+}
+main .explorationMenu .boutonExplorer {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30 0;
+}
+main .explorationMenu .boutonExplorer button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  text-decoration: none;
+  cursor: pointer;
+}
+main .explorationMenu .boutonExplorer button:hover {
+  filter: brightness(115%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+main .explorationMenu .boutonExplorer button:focus, main .explorationMenu .boutonExplorer button:active {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}
+main .fonctionnement {
+  margin: 40px 15px;
+}
+main .fonctionnement .divEtapeFonctionnement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .fonctionnement .etapeFonctionnement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  width: 322px;
+  height: 72px;
+  margin: 20px;
+}/*# sourceMappingURL=index.css.map */

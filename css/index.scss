@@ -1,0 +1,85 @@
+@import 'style';
+@import 'variables';
+@import 'classes';
+@import 'header';
+
+
+main{
+    .localisation{
+        height:50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EAEAEA;
+
+        .iconeAdresse i{
+            height:16px;
+            margin:5px;
+        }
+        .iconeAdresse input{
+            margin:5px;
+            font-size: 16px;
+            border: 0px;
+            width: 120px;
+            background-color: #EAEAEA;
+        }
+    }
+
+    .explorationMenu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #F6F6F6;
+
+        h2{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 24px;
+            margin: 30px 30px 5px 30px;
+        }
+
+        p{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 18px;
+            margin: 5px 30px 30px 30px;
+        }
+        .boutonExplorer
+        {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 30 0;
+            button{
+                @include button(#ffffff, $primaire-color,$secondaire-color);
+            }
+        }
+    }
+
+    .fonctionnement{
+        margin:40px 15px;
+
+        .divEtapeFonctionnement{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .etapeFonctionnement{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+            background-color: #F6F6F6;
+            width: 322px;
+            height: 72px;
+            margin: 20px;
+
+        }
+    }
+
+
+  }
+  
