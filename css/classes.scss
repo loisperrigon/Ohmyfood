@@ -6,7 +6,7 @@
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(193.33deg, $primaire-color -11.44%, $secondaire-color 123.93%);
+    background: linear-gradient($primaire-color, $secondaire-color);
     text-decoration: none;
     cursor: pointer;
   
@@ -23,3 +23,56 @@
     }
   }
 
+  @mixin coeur($primaire-color, $secondaire-color){
+
+    position:relative; //Pour donner la position relative au parents
+
+
+    .fa-regular.fa-heart{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 21px;
+
+    }
+
+    .fa-solid.fa-heart{
+      position:absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 21px;
+      opacity: 0;
+
+      background: linear-gradient(#FF79DA, #9356DC);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 400ms;
+    }
+    
+    .fa-solid.fa-heart:hover{
+        opacity: 1;
+    }
+  }
+
+
+  @mixin nouveauArticle($tertiare-color,$color-Text){
+    position: relative;
+
+  .nouveauArticle{
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background-color: $tertiare-color;
+      color:$color-Text;
+      height: 29px;
+      width: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 2px;
+
+  }
+}
