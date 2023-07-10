@@ -68,16 +68,105 @@ main{
         }
 
         .etapeFonctionnement{
+            position: relative;
             display: flex;
             align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-            background-color: #F6F6F6;
             width: 322px;
             height: 72px;
             margin: 20px;
 
+
+            .numeroEtapeFonctionnement{
+                position:absolute;
+                z-index: 2;
+                background-color: $primaire-color;
+                color:#ffffff;
+                width: 24px;
+                height: 24px;
+                border-radius: 45%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .etapeFonctionnementTexteIcone{
+                position: relative;
+                z-index: 1; /* Valeur de z-index pour l'élément */
+                width: 100%;
+                height: 100%;
+                margin:0 12px; //Pour etre au centre du numero car 24/2 = 12
+
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                background-color: #F6F6F6;
+
+    
+                p{
+                    margin-left: 30px;
+                    font-size: 16px;
+         
+                }
+
+                i{
+                    margin-left: 30px;
+                    color: $primaire-color;
+                }
+    
+            }
+    
         }
+
+    }
+
+    .sectionRestaurants{
+
+        background-color: #F6F6F6;
+
+
+        h2{
+            padding:40px 15px 0px 15px;
+            margin:0px;
+        }
+
+        .cardRestaurants{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            .card{
+                height: 251px;
+                width: 340px;
+                min-width: 340px;
+                margin:20px;
+                padding: 5px;
+                border-radius: 15px;
+                background-color:white;
+            
+                img{
+                    height: 75%;
+                    width: 100%;
+                    border-radius: 10px;
+                }
+            
+                .cardContent{
+                  height: 25%;
+                  display:flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin: 0 10px;
+            
+                  .iconeCoeur{
+                    
+                    i{
+                        color:red;
+                    }
+                  }
+                }
+            }            
+        }        
     }
 
 
