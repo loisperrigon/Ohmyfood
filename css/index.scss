@@ -1,6 +1,4 @@
 @import 'style';
-@import 'variables';
-@import 'classes';
 @import 'header';
 @import 'footer';
 
@@ -198,16 +196,16 @@ main{
                   display:flex;
                   align-items: center;
                   margin: 0 10px;
+                  width: 100%;
 
                   .cardTxt{
-                    width: 90%;
+                    width: 100%;
+
+                    .iconeCoeur{
+                        background-color: red;
+                      }
                   }
             
-                  .iconeCoeur{
-                    width: 10%;
-
-                    @include coeur($primaire-color,$secondaire-color);
-                  }
                 }
             }            
         }        

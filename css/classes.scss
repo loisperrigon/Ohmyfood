@@ -31,7 +31,8 @@
     .fa-regular.fa-heart{
       position:absolute;
       top: 50%;
-      left: 50%;
+      right: 50%;
+      margin-right: 10px;
       transform: translate(-50%, -50%);
       font-size: 21px;
 
@@ -40,12 +41,13 @@
     .fa-solid.fa-heart{
       position:absolute;
       top: 50%;
-      left: 50%;
+      right: 50%;
+      margin-right: 10px;
       transform: translate(-50%, -50%);
       font-size: 21px;
       opacity: 0;
 
-      background: linear-gradient(#FF79DA, #9356DC);
+      background: linear-gradient($primaire-color, $secondaire-color);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;

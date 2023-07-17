@@ -1,3 +1,41 @@
+@charset "UTF-8";
 body, p, h2, h3, ul {
   margin: 0px;
+}
+
+.iconeCoeur {
+  position: relative;
+}
+.iconeCoeur .fa-regular.fa-heart {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 21px;
+}
+.iconeCoeur .fa-solid.fa-heart {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 21px;
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.iconeCoeur .fa-solid.fa-heart:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit; /* Utiliser la couleur héritée du parent */
 }/*# sourceMappingURL=style.css.map */

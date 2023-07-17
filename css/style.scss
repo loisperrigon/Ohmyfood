@@ -1,6 +1,19 @@
+@import 'variables';
+@import 'classes';
 
 
 body,p,h2,h3,ul{
     margin:0px;
 }
 
+.iconeCoeur{
+    @include coeur($primaire-color,$secondaire-color);   //*Ci joint le code html a l'endroit ou vous voulez un coeur <div class="iconeCoeur"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></div>
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: inherit; /* Utiliser la couleur héritée du parent */
+  }
