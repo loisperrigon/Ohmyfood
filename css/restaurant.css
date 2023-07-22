@@ -1,0 +1,230 @@
+@charset "UTF-8";
+body, p, h2, h3, h5, ul {
+  margin: 0px;
+}
+
+.iconeCoeur {
+  position: relative;
+}
+.iconeCoeur .fa-regular.fa-heart {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 21px;
+}
+.iconeCoeur .fa-solid.fa-heart {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  margin-right: 10px;
+  transform: translate(-50%, -50%);
+  font-size: 21px;
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 400ms;
+}
+.iconeCoeur .fa-solid.fa-heart:hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit; /* Utiliser la couleur héritée du parent */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+header .logoOhmyfood img {
+  height: 44px;
+  width: 162px;
+}
+
+footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px 10px;
+}
+footer .listFooter {
+  padding: 0px;
+}
+@media (min-width: 1024px) {
+  footer .listFooter {
+    display: flex;
+    justify-content: end;
+  }
+}
+footer .listFooter li {
+  list-style-type: none;
+  margin: 5px 0px;
+}
+@media (min-width: 1024px) {
+  footer .listFooter li {
+    margin: 20 10px;
+    order: 1;
+  }
+}
+footer .listFooter .titreFooter {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20 0;
+}
+@media (min-width: 1024px) {
+  footer .listFooter .titreFooter {
+    order: 2;
+    margin: 20 10 0 50;
+  }
+}
+
+header {
+  align-items: center;
+  position: relative;
+}
+header .logoFlecheGauche {
+  position: absolute;
+  left: 0;
+}
+
+main .imageRestaurant {
+  position: relative;
+  margin-bottom: -30px;
+  z-index: 1;
+}
+main .imageRestaurant img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .restaurantMenu {
+  position: relative;
+  border-radius: 20px;
+  z-index: 2;
+  background-color: #F6F6F6;
+}
+main .restaurantMenu .restaurantCoeur {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .restaurantMenu .restaurantCoeur h2 {
+  font-size: 28px;
+}
+main .restaurantMenu .restaurantCoeur .iconeCoeur {
+  margin-left: 60px;
+  margin-right: 0px;
+}
+main .restaurantMenu .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+main .restaurantMenu .menu .sectionMenu {
+  width: 100%;
+  margin-bottom: 30px;
+}
+main .restaurantMenu .menu .sectionMenu .sectionTitre {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10%;
+}
+main .restaurantMenu .menu .sectionMenu .sectionTitre h4 {
+  flex-basis: 100%;
+  font-size: 16px;
+  width: 10%;
+  margin: 0;
+}
+main .restaurantMenu .menu .sectionMenu .sectionTitre hr {
+  width: 50%;
+  background-color: #99E2D0;
+  height: 3px;
+  margin: 5px 0px;
+  border: 0px;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat {
+  width: 100%;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  transition: width 0.5s;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat h5 {
+  font-size: 18px;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat .descriptionPrix {
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat .descriptionPrix .description {
+  white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 15px;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat .descriptionPrix .prix {
+  font-weight: 700;
+  margin-left: 15px;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .confirmation {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: width 0.5s;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .confirmation i {
+  display: none;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation:hover .contenantPlat {
+  width: 80%;
+  border-radius: 15px 0px 0 15px;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation:hover .confirmation {
+  width: 20%;
+}
+main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation:hover .confirmation i {
+  display: block;
+}
+main .restaurantMenu .menu button {
+  margin-bottom: 20px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 0px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(#9356DC, #FF79DA);
+  text-decoration: none;
+  cursor: pointer;
+}
+main .restaurantMenu .menu button:hover {
+  filter: brightness(115%);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
+}
+main .restaurantMenu .menu button:focus, main .restaurantMenu .menu button:active {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=restaurant.css.map */
