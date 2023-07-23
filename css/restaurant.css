@@ -34,6 +34,7 @@ body, p, h2, h3, h5, ul {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
@@ -110,7 +111,7 @@ main .restaurantMenu {
   position: relative;
   border-radius: 20px;
   z-index: 2;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
 }
 main .restaurantMenu .restaurantCoeur {
   padding: 20px;
@@ -135,6 +136,16 @@ main .restaurantMenu .menu {
 main .restaurantMenu .menu .sectionMenu {
   width: 100%;
   margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeInGroup 1s forwards;
+}
+@keyframes fadeInGroup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 main .restaurantMenu .menu .sectionMenu .sectionTitre {
   display: flex;
@@ -154,60 +165,67 @@ main .restaurantMenu .menu .sectionMenu .sectionTitre hr {
   margin: 5px 0px;
   border: 0px;
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation {
+main .restaurantMenu .menu .sectionMenu .articleMenu {
+  position: relative;
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  margin: 10px;
-}
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat {
-  width: 100%;
-  padding: 10px;
-  background-color: #FFFFFF;
+  padding: 15px;
+  margin: 20px 10px;
   border-radius: 15px;
-  transition: width 0.5s;
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat h5 {
-  font-size: 18px;
-}
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat .descriptionPrix {
-  height: 15px;
+main .restaurantMenu .menu .sectionMenu .articleMenu .menuInfo {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: width 0.5s ease-in-out;
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat .descriptionPrix .description {
-  white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+main .restaurantMenu .menu .sectionMenu .articleMenu .menuInfo .menuText {
+  overflow: hidden;
+}
+main .restaurantMenu .menu .sectionMenu .articleMenu .menuInfo .menuText h5, main .restaurantMenu .menu .sectionMenu .articleMenu .menuInfo .menuText p {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 15px;
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .contenantPlat .plat .descriptionPrix .prix {
-  font-weight: 700;
-  margin-left: 15px;
-}
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .confirmation {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 0%;
-  border-radius: 0 15px 15px 0;
+main .restaurantMenu .menu .sectionMenu .articleMenu .menuConfirmation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  height: 100%;
   background-color: #99E2D0;
-  transition: width 0.5s;
+  width: 0px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  transition: width 0.5s ease-in-out;
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation .confirmation i {
-  display: none;
+main .restaurantMenu .menu .sectionMenu .articleMenu:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation:hover .contenantPlat {
-  width: 80%;
-  border-radius: 15px 0px 0 15px;
+main .restaurantMenu .menu .sectionMenu .articleMenu:hover .menuInfo {
+  width: calc(100% - 70px);
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation:hover .confirmation {
-  width: 20%;
+main .restaurantMenu .menu .sectionMenu .articleMenu:hover .menuConfirmation {
+  display: flex;
+  opacity: 1;
+  width: 70px;
 }
-main .restaurantMenu .menu .sectionMenu .contenantPlatConfirmation:hover .confirmation i {
-  display: block;
+main .restaurantMenu .menu .sectionMenu .articleMenu:hover .menuConfirmation .fa-solid.fa-circle-check {
+  color: white;
+  animation: rotateIcon 0.8s linear;
 }
-main .restaurantMenu .menu button {
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg); /* Rotation initiale à 0 degrés */
+  }
+  to {
+    transform: rotate(360deg); /* Rotation complète à 360 degrés */
+  }
+}
+main .restaurantMenu .boutonCommander button {
   margin-bottom: 20px;
   display: inline-block;
   padding: 10px 20px;
@@ -220,11 +238,11 @@ main .restaurantMenu .menu button {
   text-decoration: none;
   cursor: pointer;
 }
-main .restaurantMenu .menu button:hover {
+main .restaurantMenu .boutonCommander button:hover {
   filter: brightness(115%);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.3490196078);
 }
-main .restaurantMenu .menu button:focus, main .restaurantMenu .menu button:active {
+main .restaurantMenu .boutonCommander button:focus, main .restaurantMenu .boutonCommander button:active {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.3);
 }/*# sourceMappingURL=restaurant.css.map */
