@@ -24,7 +24,7 @@ footer .listFooter li {
 }
 footer .listFooter .titreFooter {
   font-size: 16px;
-  font-weight: bold;
+  font-family: "Shrikhand", sans-serif;
   margin: 20 0;
 }
 @media (min-width: 1024px) {
