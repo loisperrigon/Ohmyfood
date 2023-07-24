@@ -10,7 +10,7 @@ main{
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #EAEAEA;
+        background-color:$backgroundAdresse;
 
         .iconeAdresse i{
             height:16px;
@@ -21,7 +21,7 @@ main{
             font-size: 16px;
             border: 0px;
             width: 120px;
-            background-color: #EAEAEA;
+            background-color: $backgroundAdresse;
         }
     }
 
@@ -29,7 +29,7 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        background-color: #F6F6F6;
+        background-color: $backgroundSection;
 
         h2{
             display: flex;
@@ -52,7 +52,7 @@ main{
             justify-content: center;
             margin: 0 0 30 0;
             button{
-                @include button(#ffffff, $primaire-color,$secondaire-color);
+                @include button($backgroundBase, $primaire-color,$secondaire-color);
             }
         }
     }
@@ -84,12 +84,13 @@ main{
             position: relative;
             display: flex;
             align-items: center;
-            width: 322px;
+            width: 70%;
             height: 72px;
             margin: 20px;
 
             @media (min-width: 1024px) {
-                margin: 40px 0px;
+                margin: 40px 50px;
+                width: 33.3%;
     
             }
 
@@ -98,7 +99,7 @@ main{
                 position:absolute;
                 z-index: 2;
                 background-color: $primaire-color;
-                color:#ffffff;
+                color:$backgroundBase;
                 width: 24px;
                 height: 24px;
                 border-radius: 45%;
@@ -116,8 +117,9 @@ main{
 
                 display: flex;
                 align-items: center;
+                justify-content: center;
                 border-radius: 20px;
-                background-color: #F6F6F6;
+                background-color: $backgroundSection;
 
     
                 p{
@@ -139,7 +141,7 @@ main{
 
     .sectionRestaurants{
 
-        background-color: #F6F6F6;
+        background-color: $backgroundSection;
         @media (min-width: 1024px) {
             padding: 40px 180px;
 
@@ -172,18 +174,18 @@ main{
             .card{
 
                 height: 251px;
-                width: 340px;
+                width: 70%;
                 margin:20px;
                 padding: 5px;
                 border-radius: 15px;
-                background-color:white;
+                background-color:$backgroundBase;
 
                 @media (min-width: 1024px) {
                     width:45%;
                     margin:20px 0px;
                 }
                
-                @include nouveauArticle($tertiare-color,#008766); //Si seulement c'est un nouveau articles
+                @include nouveauArticle($tertiare-color,$tertiare-color-font); //Si seulement c'est un nouveau articles
             
                 img{
                     height: 75%;
@@ -201,10 +203,7 @@ main{
 
                   .cardTxt{
                     width: 100%;
-
-                    .iconeCoeur{
-                        background-color: red;
-                      }
+                                  
                   }
             
                 }

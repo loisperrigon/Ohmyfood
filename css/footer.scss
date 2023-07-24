@@ -1,6 +1,8 @@
+@import 'style';
+
 footer{
-    background-color: #353535;
-    color:white;
+    background-color: $backgroundFooter;
+    color: $backgroundBase;
     padding:20px 10px;
 
     .listFooter{
