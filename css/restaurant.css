@@ -211,7 +211,7 @@ main .restaurantMenu .restaurantCoeur {
   align-items: center;
   justify-content: center;
 }
-main .restaurantMenu .restaurantCoeur h2 {
+main .restaurantMenu .restaurantCoeur h1 {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
 }
