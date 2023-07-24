@@ -7,6 +7,9 @@ body,p,h2,h3,h5,ul{
     margin:0px;
 }
 
+body{
+  font-family: Roboto, sans-serif;
+}
 
 .iconeCoeur{
     @include coeur($primaire-color,$secondaire-color);   //*Ci joint le code html a l'endroit ou vous voulez un coeur <div class="iconeCoeur"><i class="fa-regular fa-heart"></i><i class="fa-solid fa-heart"></i></div>

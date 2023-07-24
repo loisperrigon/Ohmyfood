@@ -5,6 +5,10 @@ body, p, h2, h3, h5, ul {
   margin: 0px;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+}
+
 .iconeCoeur {
   position: relative;
 }
@@ -138,6 +142,10 @@ header .logoOhmyfood img {
 
 body, p, h2, h3, h5, ul {
   margin: 0px;
+}
+
+body {
+  font-family: Roboto, sans-serif;
 }
 
 .iconeCoeur {
