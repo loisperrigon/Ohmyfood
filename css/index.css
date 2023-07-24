@@ -320,13 +320,14 @@ main .explorationMenu {
   flex-direction: column;
   justify-content: center;
   background-color: #F6F6F6;
+  padding: 30px;
 }
 main .explorationMenu h2 {
   display: flex;
   justify-content: center;
   text-align: center;
   font-size: 24px;
-  margin: 30px 30px 5px 30px;
+  margin-bottom: 5px;
 }
 main .explorationMenu p {
   display: flex;
@@ -447,6 +448,7 @@ main .sectionRestaurants .cardRestaurants {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 @media (min-width: 1024px) {
   main .sectionRestaurants .cardRestaurants {

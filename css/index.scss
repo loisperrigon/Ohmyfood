@@ -30,13 +30,14 @@ main{
         flex-direction: column;
         justify-content: center;
         background-color: $backgroundSection;
+        padding: 30px;
 
         h2{
             display: flex;
             justify-content: center;
             text-align: center;
             font-size: 24px;
-            margin: 30px 30px 5px 30px;
+            margin-bottom: 5px;
         }
 
         p{
@@ -163,6 +164,7 @@ main{
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            padding: 20px;
 
             @media (min-width: 1024px) {
                 flex-direction:row;
