@@ -389,7 +389,7 @@ main .fonctionnement .etapeFonctionnement {
 }
 @media (min-width: 1024px) {
   main .fonctionnement .etapeFonctionnement {
-    margin: 40px 50px;
+    margin: 40px 0px;
     width: 33.3%;
   }
 }
@@ -422,7 +422,7 @@ main .fonctionnement .etapeFonctionnement .etapeFonctionnementTexteIcone p {
   font-size: 16px;
 }
 main .fonctionnement .etapeFonctionnement .etapeFonctionnementTexteIcone i {
-  margin-left: 20px;
+  margin: 20px;
   color: #9356DC;
 }
 main .sectionRestaurants {
@@ -459,7 +459,6 @@ main .sectionRestaurants .cardRestaurants .card {
   height: 251px;
   width: 70%;
   margin: 20px;
-  padding: 5px;
   border-radius: 15px;
   background-color: white;
   position: relative;
@@ -472,8 +471,8 @@ main .sectionRestaurants .cardRestaurants .card {
 }
 main .sectionRestaurants .cardRestaurants .card .nouveauArticle {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  top: 13px;
+  right: 13px;
   background-color: #99E2D0;
   color: #008766;
   height: 29px;
@@ -482,6 +481,12 @@ main .sectionRestaurants .cardRestaurants .card .nouveauArticle {
   align-items: center;
   justify-content: center;
   border-radius: 2px;
+}
+@media (min-width: 1024px) {
+  main .sectionRestaurants .cardRestaurants .card .nouveauArticle {
+    top: 30px;
+    right: 30px;
+  }
 }
 main .sectionRestaurants .cardRestaurants .card img {
   height: 75%;
@@ -494,10 +499,10 @@ main .sectionRestaurants .cardRestaurants .card .cardContent {
   height: 25%;
   display: flex;
   align-items: center;
-  margin: 0 10px;
   width: 100%;
 }
 main .sectionRestaurants .cardRestaurants .card .cardContent .cardTxt {
+  margin: 0px 20px;
   width: 100%;
 }
 

@@ -65,8 +65,8 @@
 
   .nouveauArticle{
       position: absolute;
-      top: 30px;
-      right: 30px;
+      top: 13px;
+      right: 13px;
       background-color: $tertiare-color;
       color:$color-Text;
       height: 29px;
@@ -75,6 +75,12 @@
       align-items: center;
       justify-content: center;
       border-radius: 2px;
+
+      @media (min-width: 1024px) {
+        top: 30px;
+        right: 30px;
+
+    }
 
   }
 }

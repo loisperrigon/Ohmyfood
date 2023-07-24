@@ -89,7 +89,7 @@ main{
             margin: 20px;
 
             @media (min-width: 1024px) {
-                margin: 40px 50px;
+                margin: 40px 0px;
                 width: 33.3%;
     
             }
@@ -129,7 +129,7 @@ main{
                 }
 
                 i{
-                    margin-left: 20px;
+                    margin: 20px;
                     color: $primaire-color;
                 }
     
@@ -176,7 +176,6 @@ main{
                 height: 251px;
                 width: 70%;
                 margin:20px;
-                padding: 5px;
                 border-radius: 15px;
                 background-color:$backgroundBase;
 
@@ -198,10 +197,11 @@ main{
                   height: 25%;
                   display:flex;
                   align-items: center;
-                  margin: 0 10px;
+                  
                   width: 100%;
 
                   .cardTxt{
+                    margin: 0px 20px;
                     width: 100%;
                                   
                   }
