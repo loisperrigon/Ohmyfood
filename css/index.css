@@ -12,7 +12,7 @@ body {
 .iconeCoeur {
   position: relative;
 }
-.iconeCoeur .fa-regular.fa-heart {
+.iconeCoeur .fa-solid.fa-heart, .iconeCoeur .fa-regular.fa-heart {
   position: absolute;
   top: 50%;
   right: 50%;
@@ -21,12 +21,6 @@ body {
   font-size: 21px;
 }
 .iconeCoeur .fa-solid.fa-heart {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-right: 10px;
-  transform: translate(-50%, -50%);
-  font-size: 21px;
   opacity: 0;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -151,7 +145,7 @@ body {
 .iconeCoeur {
   position: relative;
 }
-.iconeCoeur .fa-regular.fa-heart {
+.iconeCoeur .fa-solid.fa-heart, .iconeCoeur .fa-regular.fa-heart {
   position: absolute;
   top: 50%;
   right: 50%;
@@ -160,12 +154,6 @@ body {
   font-size: 21px;
 }
 .iconeCoeur .fa-solid.fa-heart {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin-right: 10px;
-  transform: translate(-50%, -50%);
-  font-size: 21px;
   opacity: 0;
   background: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -432,6 +420,11 @@ main .fonctionnement .etapeFonctionnement .etapeFonctionnementTexteIcone p {
 }
 main .fonctionnement .etapeFonctionnement .etapeFonctionnementTexteIcone i {
   margin: 20px;
+}
+main .fonctionnement .etapeFonctionnement:hover {
+  cursor: pointer;
+}
+main .fonctionnement .etapeFonctionnement:hover i {
   color: #9356DC;
 }
 main .sectionRestaurants {

@@ -130,12 +130,21 @@ main{
                 }
 
                 i{
-                    margin: 20px;
-                    color: $primaire-color;
+                    margin: 20px;                  
                 }
     
             }
+        
     
+        }
+
+        .etapeFonctionnement:hover{
+
+            cursor: pointer;
+
+             i{
+                color: $primaire-color;                    
+              }
         }
 
     }

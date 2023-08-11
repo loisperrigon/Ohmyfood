@@ -28,7 +28,7 @@
     position:relative; //Pour donner la position relative au parents
 
 
-    .fa-regular.fa-heart{
+    .fa-solid.fa-heart, .fa-regular.fa-heart{
       position:absolute;
       top: 50%;
       right: 50%;
@@ -39,19 +39,12 @@
     }
 
     .fa-solid.fa-heart{
-      position:absolute;
-      top: 50%;
-      right: 50%;
-      margin-right: 10px;
-      transform: translate(-50%, -50%);
-      font-size: 21px;
       opacity: 0;
-
       background: linear-gradient($primaire-color, $secondaire-color);
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      transition: all 400ms;
+      background-clip: text;  // Ces propriétés définissent la zone où l'arrière-plan du dégradé sera visible comme étant le texte lui-même. Cela crée l'effet de remplissage du texte avec un dégradé de couleur.
+      -webkit-background-clip: text;  //Car les icone sont considere comme du text
+      color: transparent; // Rend la couleur du texte transparente pour permettre au dégradé de se montrer.
+      transition: all 400ms; //delais du remplissage
     }
     
     .fa-solid.fa-heart:hover{

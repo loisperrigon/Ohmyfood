@@ -31,7 +31,7 @@ body{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100%;  //position du loader sur l'entiereter de la page
     background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
     display: flex;
     justify-content: center;
@@ -72,7 +72,7 @@ body{
   }
   
   @keyframes prixClipFix {
-    0% { clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0); }
+    0% { clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0); } // form vectoriel 
     25% { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0); }
     50% { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%); }
     75% { clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%); }
